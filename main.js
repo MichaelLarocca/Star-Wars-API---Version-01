@@ -3,7 +3,7 @@ const ctnPlanets = document.getElementById("ctn-main");
 const planetsPrevious = document.getElementById("planets-previous");
 const planetsNext = document.getElementById("planets-next");
 
-let URL_Planets = "https://swapi.dev/api/planets/?page=1";
+const URL_Planets = "https://swapi.dev/api/planets/?page=1";
 let nextPlanets;
 let previousPlanets;
 
@@ -14,7 +14,7 @@ planetsNext.addEventListener("click", pageNextPlanets);
 const starshipsPrevious = document.getElementById("starships-previous");
 const starshipsNext = document.getElementById("starships-next");
 
-let URL_Starships = "https://swapi.dev/api/starships/?page=1";
+const URL_Starships = "https://swapi.dev/api/starships/?page=1";
 let nextStarships;
 let previousStarships;
 
@@ -25,7 +25,7 @@ starshipsNext.addEventListener("click", pageNextStarships);
 const peoplePrevious = document.getElementById("people-previous");
 const peopleNext = document.getElementById("people-next");
 
-let URL_People = "https://swapi.dev/api/people/?page=1";
+const URL_People = "https://swapi.dev/api/people/?page=1";
 let nextPeople;
 let previousPeople;
 
@@ -36,7 +36,7 @@ peopleNext.addEventListener("click", pageNextPeople);
 // Functions Planets
 async function fetchPlanets() {
   document.querySelector('.overlay').classList.add('active');
-  let results = await fetch(URL_Planets);
+  const results = await fetch(URL_Planets);
   const data = await results.json();
   nextPlanets = data.next;
   previousPlanets = data.previous;
@@ -85,7 +85,7 @@ function pagePreviousPlanets() {
 // Functions Starships
 async function fetchStarships() {
 document.querySelector('.overlay').classList.add('active');
-  let results = await fetch(URL_Starships);
+  const results = await fetch(URL_Starships);
   const data = await results.json();
   nextStarships = data.next;
   previousStarships = data.previous;
@@ -139,7 +139,7 @@ function pagePreviousStarships() {
 // Functions People
 async function fetchPeople() {
 document.querySelector('.overlay').classList.add('active');
-  let results = await fetch(URL_People);
+  const results = await fetch(URL_People);
   const data = await results.json();
   nextPeople = data.next;
   previousPeople = data.previous;
