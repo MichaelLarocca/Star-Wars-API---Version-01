@@ -1,7 +1,7 @@
 // Variables Planets
 const ctnPlanets = document.getElementById("ctn-main");
-const planetsPrevious = document.getElementById("planets-previous");
-const planetsNext = document.getElementById("planets-next");
+let planetsPrevious = document.getElementById("planets-previous");
+let planetsNext = document.getElementById("planets-next");
 
 const URL_Planets = "https://swapi.dev/api/planets/?page=1";
 let nextPlanets;
@@ -11,8 +11,8 @@ planetsPrevious.addEventListener("click", pagePreviousPlanets);
 planetsNext.addEventListener("click", pageNextPlanets);
 
 // Variables Starships
-const starshipsPrevious = document.getElementById("starships-previous");
-const starshipsNext = document.getElementById("starships-next");
+let starshipsPrevious = document.getElementById("starships-previous");
+let starshipsNext = document.getElementById("starships-next");
 
 const URL_Starships = "https://swapi.dev/api/starships/?page=1";
 let nextStarships;
@@ -22,8 +22,8 @@ starshipsPrevious.addEventListener("click", pagePreviousStarships);
 starshipsNext.addEventListener("click", pageNextStarships);
 
 // Variables People
-const peoplePrevious = document.getElementById("people-previous");
-const peopleNext = document.getElementById("people-next");
+let peoplePrevious = document.getElementById("people-previous");
+let peopleNext = document.getElementById("people-next");
 
 const URL_People = "https://swapi.dev/api/people/?page=1";
 let nextPeople;
