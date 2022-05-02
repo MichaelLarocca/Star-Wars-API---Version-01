@@ -36,7 +36,7 @@ peopleNext.addEventListener("click", pageNextPeople);
 // Functions Planets
 async function fetchPlanets() {
   document.querySelector('.overlay').classList.add('active');
-  const results = await fetch(URL_Planets);
+  let results = await fetch(URL_Planets);
   const data = await results.json();
   nextPlanets = data.next;
   previousPlanets = data.previous;
@@ -85,7 +85,7 @@ function pagePreviousPlanets() {
 // Functions Starships
 async function fetchStarships() {
 document.querySelector('.overlay').classList.add('active');
-  const results = await fetch(URL_Starships);
+  let results = await fetch(URL_Starships);
   const data = await results.json();
   nextStarships = data.next;
   previousStarships = data.previous;
@@ -139,7 +139,7 @@ function pagePreviousStarships() {
 // Functions People
 async function fetchPeople() {
 document.querySelector('.overlay').classList.add('active');
-  const results = await fetch(URL_People);
+  let results = await fetch(URL_People);
   const data = await results.json();
   nextPeople = data.next;
   previousPeople = data.previous;
