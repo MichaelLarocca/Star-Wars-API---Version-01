@@ -3,7 +3,7 @@ const ctnPlanets = document.getElementById("ctn-main");
 const planetsPrevious = document.getElementById("planets-previous");
 const planetsNext = document.getElementById("planets-next");
 
-let URL_Planets = "https://swapi.dev/api/planets/?page=1";
+let URL_Planets = "https://swapi.py4e.com/api/planets/?page=1";
 let nextPlanets;
 let previousPlanets;
 
@@ -14,7 +14,7 @@ planetsNext.addEventListener("click", pageNextPlanets);
 const starshipsPrevious = document.getElementById("starships-previous");
 const starshipsNext = document.getElementById("starships-next");
 
-let URL_Starships = "https://swapi.dev/api/starships/?page=1";
+let URL_Starships = "https://swapi.py4e.com/api/starships/?page=1";
 let nextStarships;
 let previousStarships;
 
@@ -25,7 +25,7 @@ starshipsNext.addEventListener("click", pageNextStarships);
 const peoplePrevious = document.getElementById("people-previous");
 const peopleNext = document.getElementById("people-next");
 
-let URL_People = "https://swapi.dev/api/people/?page=1";
+let URL_People = "https://swapi.py4e.com/api/people/?page=1";
 let nextPeople;
 let previousPeople;
 
